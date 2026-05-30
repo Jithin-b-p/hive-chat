@@ -3,3 +3,8 @@ export interface ApiResponse<T> {
   data: T;
   message?: string;
 }
+
+export interface PaginatationQuery {
+  limit?: number;
+  cursor?: string;
+}
